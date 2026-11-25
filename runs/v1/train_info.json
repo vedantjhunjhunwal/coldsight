@@ -1,0 +1,10 @@
+{
+ "name": "v1",
+ "base": "yolov8n.pt",
+ "data": "data/yolo/data.yaml",
+ "epochs": 20,
+ "imgsz": 416,
+ "batch": 16,
+ "lr0": 0.01,
+ "weights": "runs/v1/weights/best.pt"
+}

@@ -1,0 +1,32 @@
+{
+ "coldsight_v2_fp32|threads=1": {
+  "p50_ms": 38.0,
+  "p95_ms": 43.7,
+  "size_mb": 12.09
+ },
+ "coldsight_v2_fp32|threads=2": {
+  "p50_ms": 27.2,
+  "p95_ms": 40.1,
+  "size_mb": 12.09
+ },
+ "coldsight_v2_int8|threads=1": {
+  "p50_ms": 29.3,
+  "p95_ms": 33.2,
+  "size_mb": 5.83
+ },
+ "coldsight_v2_int8|threads=2": {
+  "p50_ms": 21.0,
+  "p95_ms": 26.9,
+  "size_mb": 5.83
+ },
+ "coldsight_v1_int8_decodefp32|threads=1": {
+  "p50_ms": 20.0,
+  "p95_ms": 21.7,
+  "size_mb": 3.37
+ },
+ "coldsight_v1_int8_decodefp32|threads=2": {
+  "p50_ms": 14.7,
+  "p95_ms": 18.9,
+  "size_mb": 3.37
+ }
+}

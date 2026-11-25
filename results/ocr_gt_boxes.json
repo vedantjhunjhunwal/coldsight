@@ -1,0 +1,42 @@
+{
+ "test": {
+  "clean": {
+   "reads": 505,
+   "exact": 0.677,
+   "accepted": 0.679,
+   "wrong_among_accepted": 0.0029
+  },
+  "raw": {
+   "reads": 505,
+   "exact": 0.03,
+   "accepted": 0.032,
+   "wrong_among_accepted": 0.0625
+  },
+  "per_pallet_voted": {
+   "pallets": 33,
+   "correct": 22,
+   "wrong": 0,
+   "unread": 11
+  }
+ },
+ "shift": {
+  "clean": {
+   "reads": 461,
+   "exact": 0.516,
+   "accepted": 0.56,
+   "wrong_among_accepted": 0.0775
+  },
+  "raw": {
+   "reads": 461,
+   "exact": 0.046,
+   "accepted": 0.046,
+   "wrong_among_accepted": 0.0
+  },
+  "per_pallet_voted": {
+   "pallets": 25,
+   "correct": 17,
+   "wrong": 1,
+   "unread": 7
+  }
+ }
+}

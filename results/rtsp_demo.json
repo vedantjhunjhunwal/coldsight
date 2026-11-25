@@ -1,0 +1,60 @@
+{
+ "processed": 683,
+ "fps": 11.08,
+ "grabbed": 849,
+ "dropped": 166,
+ "reconnects": 1,
+ "latency_ms_p50": 38.0,
+ "latency_ms_p95": 186.4,
+ "events": 6,
+ "monitor": {
+  "frames": 683,
+  "luma_psi": 0.6392847782494773,
+  "drift_alert_frames": 0,
+  "mean_conf": 0.9274369219938914,
+  "uncertain_frac": 0.0,
+  "relabel_queue": 29
+ },
+ "model": "coldsight_v2_int8.onnx",
+ "seconds": 60,
+ "source_fps": 15,
+ "camera_cut_seconds": 4,
+ "events_sample": [
+  {
+   "frame": 60,
+   "track": 1,
+   "direction": "out",
+   "pallet_id": "00305143"
+  },
+  {
+   "frame": 211,
+   "track": 3,
+   "direction": "out",
+   "pallet_id": "00305143"
+  },
+  {
+   "frame": 360,
+   "track": 5,
+   "direction": "out",
+   "pallet_id": "00305143"
+  },
+  {
+   "frame": 517,
+   "track": 9,
+   "direction": "out",
+   "pallet_id": "00305143"
+  },
+  {
+   "frame": 666,
+   "track": 10,
+   "direction": "out",
+   "pallet_id": "00305143"
+  },
+  {
+   "frame": 816,
+   "track": 12,
+   "direction": "out",
+   "pallet_id": "00305143"
+  }
+ ]
+}

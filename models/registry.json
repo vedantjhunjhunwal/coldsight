@@ -1,0 +1,68 @@
+[
+ {
+  "version": "v1-int8",
+  "file": "coldsight_v1_int8.onnx",
+  "sha256": "2fa0250d78057917",
+  "size_mb": 5.83,
+  "source_weights": "runs/v1/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": 120,
+  "head": "fp32",
+  "created": "2026-11-25 21:05"
+ },
+ {
+  "version": "v1-int8_decodefp32",
+  "file": "coldsight_v1_int8_decodefp32.onnx",
+  "sha256": "ce9347b10f8faba8",
+  "size_mb": 3.37,
+  "source_weights": "runs/v1/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": 120,
+  "head": "decode-fp32",
+  "created": "2026-11-25 21:05"
+ },
+ {
+  "version": "v1-fp32",
+  "file": "coldsight_v1_fp32.onnx",
+  "sha256": "a589ccb4e741b888",
+  "size_mb": 12.09,
+  "source_weights": "runs/v1/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": null,
+  "head": null,
+  "created": "2026-11-25 21:05"
+ },
+ {
+  "version": "v1-int8_allq",
+  "file": "coldsight_v1_int8_allq.onnx",
+  "sha256": "d92e70b0f1a45aff",
+  "size_mb": 3.36,
+  "source_weights": "runs/v1/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": 120,
+  "head": "int8",
+  "created": "2026-11-25 21:05"
+ },
+ {
+  "version": "v2-fp32",
+  "file": "coldsight_v2_fp32.onnx",
+  "sha256": "822f1ef374f0e44d",
+  "size_mb": 12.09,
+  "source_weights": "runs/v2/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": null,
+  "head": null,
+  "created": "2026-11-25 21:27"
+ },
+ {
+  "version": "v2-int8",
+  "file": "coldsight_v2_int8.onnx",
+  "sha256": "dad65e96936b74bf",
+  "size_mb": 5.83,
+  "source_weights": "runs/v2/weights/best.pt",
+  "imgsz": 416,
+  "calibration_images": 120,
+  "head": "fp32",
+  "created": "2026-11-25 21:27"
+ }
+]

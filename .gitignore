@@ -1,0 +1,9 @@
+data/
+runs/*/weights/
+mlruns/
+__pycache__/
+*.pt
+*.log
+tools/
+models/_pre_*
+.pytest_cache/

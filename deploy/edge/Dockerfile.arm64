@@ -1,0 +1,13 @@
+# Edge build for ARM64 boxes (e.g. Jetson-class or Raspberry Pi 5) mounted near the dock door.
+# Build on x86 with: docker buildx build --platform linux/arm64 -f deploy/edge/Dockerfile.arm64 -t coldsight:edge .
+FROM --platform=linux/arm64 python:3.12-slim
+RUN apt-get update && apt-get install -y --no-install-recommends tesseract-ocr libgl1 libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY coldsight coldsight
+COPY models/coldsight_v2_int8.onnx models/
+# two inference threads leave headroom for OCR and stream decoding on a 4-core board
+ENV COLDSIGHT_MODEL=/app/models/coldsight_v2_int8.onnx OMP_NUM_THREADS=2 PORT=8000
+CMD ["python", "-m", "coldsight.service"]

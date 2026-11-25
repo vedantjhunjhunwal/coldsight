@@ -1,0 +1,36 @@
+{
+ "psi_threshold": {
+  "value": 1.989,
+  "worst_normal_val": 1.591,
+  "rule": "1.25 x worst normal-light val camera"
+ },
+ "monitor_normal_test": {
+  "cameras": 8,
+  "cameras_flagged": 0,
+  "first_alert_frame_max": null,
+  "frames": 1200,
+  "alert_frames": 0,
+  "alert_rate": 0.0,
+  "psi_median": 0.663,
+  "psi_max": 1.969
+ },
+ "monitor_lowlight_stream": {
+  "cameras": 12,
+  "cameras_flagged": 12,
+  "first_alert_frame_max": 29,
+  "frames": 1440,
+  "alert_frames": 1092,
+  "alert_rate": 0.758,
+  "psi_median": 6.057,
+  "psi_max": 7.185
+ },
+ "relabel": {
+  "frames": 127,
+  "qa_issues": 1,
+  "box_count_edits": {
+   "added": 4,
+   "removed": 154,
+   "kept": 823
+  }
+ }
+}
